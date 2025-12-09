@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinity Cold Chain | Supplies, Storage & Distribution</title>
+    <meta name="description" content="Professional cold storage, supplies, cross-docking, and pre-frozen gel pack distribution in Corona, CA. Serving Los Angeles, San Diego, Ventura, and Inland Empire.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Glass effect utilities */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer group" onclick="window.scrollTo(0,0)">
+                    <div class="relative transition-transform group-hover:scale-105 duration-300">
+                        <svg class="h-10 w-10 drop-shadow-md" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 10L90 85H10L50 10Z" class="fill-slate-900" />
+                            <path d="M50 40L70 75H30L50 40Z" class="fill-cyan-400" />
+                            <path d="M50 10L30 85" stroke="#1e293b" stroke-width="1" stroke-opacity="0.3" />
+                            <path d="M50 10L70 85" stroke="#1e293b" stroke-width="1" stroke-opacity="0.3" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-black text-slate-900 tracking-tight leading-none group-hover:text-blue-900 transition-colors">TRINITY</span>
+                        <span class="text-[0.65rem] font-bold text-cyan-600 tracking-[0.2em] uppercase leading-none mt-1">Cold Chain</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-sm font-medium text-slate-600 hover:text-cyan-600 transition-colors">Services</a>
+                    <a href="#facilities" class="text-sm font-medium text-slate-600 hover:text-cyan-600 transition-colors">Facilities</a>
+                    <a href="#gel-packs" class="text-sm font-medium text-slate-600 hover:text-cyan-600 transition-colors">Gel Packs</a>
+                    <a href="#rates" class="text-sm font-medium text-slate-600 hover:text-cyan-600 transition-colors">Rates</a>
+                    <a href="#contact" class="bg-blue-900 hover:bg-blue-800 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-blue-900/20 ml-2">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 p-2">
+                        <i data-lucide="menu" id="icon-menu-open" class="h-6 w-6"></i>
+                        <i data-lucide="x" id="icon-menu-close" class="h-6 w-6 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 mobile-link">Services</a>
+                <a href="#facilities" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 mobile-link">Facilities</a>
+                <a href="#gel-packs" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 mobile-link">Gel Packs</a>
+                <a href="#rates" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 mobile-link">Rates</a>
+                <a href="#contact" class="block mt-4 px-3 py-3 text-center rounded-md text-base font-medium bg-blue-900 text-white mx-3 mb-2 mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-24 pb-8 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://picsum.photos/id/401/1920/1080" alt="Cold Storage Warehouse" class="w-full h-full object-cover filter grayscale contrast-125 brightness-50" />
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-blue-900/75 mix-blend-multiply"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-100 text-sm font-medium mb-4 backdrop-blur-sm">
+                    <i data-lucide="thermometer" class="h-4 w-4"></i>
+                    <span>Now Accepting New Clients in Corona, CA</span>
+                </div>
+                
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-3 leading-tight">
+                    Trinity Cold Chain <br class="hidden md:block"/>
+                    <span class="text-blue-400 whitespace-nowrap">Supplies, Storage & Distribution</span>
+                </h1>
+                
+                <p class="text-base lg:text-lg text-slate-300 mb-6 max-w-2xl leading-relaxed">
+                    Premier cold storage, cross docking and <strong>wholesale pre-frozen gel packs</strong>. 
+                    We offer 300+ freezer rack spaces and service LA, San Diego, Ventura county, and the Inland Empire with our own fleet.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#rates" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-bold rounded-lg text-blue-900 bg-white hover:bg-blue-50 transition-all shadow-lg">
+                        View Rates
+                    </a>
+                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 border border-white/20 text-base font-bold rounded-lg text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all">
+                        Contact Us <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-6">
+                <div>
+                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">300+ Racks</div>
+                    <div class="text-xs text-blue-200">Frozen Capacity</div>
+                </div>
+                <div>
+                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">100+ Racks</div>
+                    <div class="text-xs text-blue-200">Refrigerated</div>
+                </div>
+                <div>
+                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">In Stock</div>
+                    <div class="text-xs text-blue-200">Gel Packs</div>
+                </div>
+                <div>
+                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">SoCal Wide</div>
+                    <div class="text-xs text-blue-200">Service Area</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Comprehensive Cold Chain Solutions</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Located at 1701 N. Delilah St, Corona, CA. We are your partner for Southern California cold logistics.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="group p-8 rounded-2xl border bg-white border-slate-100 hover:border-blue-100 transition-all duration-300 hover:shadow-xl">
+                    <div class="p-3 inline-block rounded-lg mb-6 bg-blue-50">
+                        <i data-lucide="warehouse" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">3PL Cold Storage</h3>
+                    <p class="mb-6 leading-relaxed text-slate-600">
+                        300+ freezer racks, 100+ refrigerated racks, and 2-high floor stacking. Flexible rentals for short or long-term needs.
+                    </p>
+                    <div class="flex items-center font-semibold text-sm cursor-pointer text-blue-600">
+                        <span>Learn more</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 (Highlighted) -->
+                <div class="group p-8 rounded-2xl border bg-blue-600 border-blue-600 text-white transform md:-translate-y-2 transition-all duration-300 hover:shadow-xl">
+                    <div class="p-3 inline-block rounded-lg mb-6 bg-white/20">
+                        <i data-lucide="snowflake" class="h-8 w-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Ice Gel Packs</h3>
+                    <p class="mb-6 leading-relaxed text-blue-100">
+                        We stock wholesale pre-frozen 16oz gel packs and offer 8oz/24oz sizes to order.
+                    </p>
+                    <div class="flex items-center font-semibold text-sm cursor-pointer text-white">
+                        <span>Learn more</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group p-8 rounded-2xl border bg-white border-slate-100 hover:border-blue-100 transition-all duration-300 hover:shadow-xl">
+                    <div class="p-3 inline-block rounded-lg mb-6 bg-blue-50">
+                        <i data-lucide="truck" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Distribution</h3>
+                    <p class="mb-6 leading-relaxed text-slate-600">
+                        Fleet servicing LA, San Diego, Ventura, & Inland Empire (up to Palm Springs & Big Bear).
+                    </p>
+                    <div class="flex items-center font-semibold text-sm cursor-pointer text-blue-600">
+                        <span>Learn more</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group p-8 rounded-2xl border bg-white border-slate-100 hover:border-blue-100 transition-all duration-300 hover:shadow-xl">
+                    <div class="p-3 inline-block rounded-lg mb-6 bg-blue-50">
+                        <i data-lucide="box" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Cross-Docking</h3>
+                    <p class="mb-6 leading-relaxed text-slate-600">
+                        Efficient in/out handling at our 3 loading dock bays. Case picking, labeling, and inventory counts available.
+                    </p>
+                    <div class="flex items-center font-semibold text-sm cursor-pointer text-blue-600">
+                        <span>Learn more</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gel Packs Section -->
+    <section id="gel-packs" class="py-20 bg-blue-900 text-white relative overflow-hidden">
+        <!-- Decorative background -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-500 opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 rounded-full bg-cyan-400 opacity-20 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center p-3 bg-blue-800 rounded-full mb-4">
+                    <i data-lucide="snowflake" class="h-6 w-6 text-cyan-400"></i>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Pre-Frozen Gel Packs</h2>
+                <p class="text-blue-100 max-w-2xl mx-auto text-lg">
+                    Stop waiting for packs to freeze. We sell pre-frozen industrial grade gel packs ready for your shipments immediately.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Feature 1 -->
+                <div class="bg-blue-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-700">
+                    <i data-lucide="zap" class="h-8 w-8 text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Instant Availability</h3>
+                    <p class="text-blue-200">
+                        Pick up packs that are rock solid. <span class="text-white font-semibold">16oz packs up to 1,400 qty</span> are in stock. Larger orders made to order.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-blue-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-700">
+                    <i data-lucide="clock" class="h-8 w-8 text-cyan-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Save Energy & Time</h3>
+                    <p class="text-blue-200">
+                        We handle the energy-intensive freezing process. You focus on packing and shipping orders faster.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-blue-800/50 backdrop-blur-sm p-6 rounded-xl border border-blue-700">
+                    <i data-lucide="snowflake" class="h-8 w-8 text-white mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Custom Freezing</h3>
+                    <p class="text-blue-200">
+                        Have your own packs? We offer "Freezing as a Service" to blast freeze your inventory.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto items-start">
+                
+                <!-- 8 oz -->
+                <div class="bg-white text-slate-900 rounded-xl p-6 text-center transform transition-all duration-300 relative opacity-95">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm whitespace-nowrap bg-slate-200 text-slate-600">
+                        <span class="flex items-center gap-1"><i data-lucide="alert-circle" class="h-3 w-3"></i> Sourced to Order</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-2 mt-4">8 oz</h3>
+                    <div class="mb-4">
+                        <div class="text-3xl font-extrabold text-slate-900 mb-1">$0.40 - $0.65</div>
+                        <div class="text-xs text-slate-500">per pack (pre-frozen)</div>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-6">Perfect for small parcel shipments.</p>
+                    <div class="border-t border-slate-100 pt-4 mb-6 space-y-2">
+                        <p class="text-sm font-semibold text-slate-600">Minimum Order: <br/>500 Packs</p>
+                    </div>
+                    <a href="#contact" class="block w-full py-3 px-4 font-bold rounded-lg transition-colors bg-slate-100 hover:bg-slate-200 text-slate-800">Request Quote</a>
+                </div>
+
+                <!-- 16 oz (Featured) -->
+                <div class="bg-white text-slate-900 rounded-xl p-6 text-center transform transition-all duration-300 relative ring-4 ring-cyan-400 shadow-xl z-10 md:-mt-4">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm whitespace-nowrap bg-green-500 text-white">
+                        <span class="flex items-center gap-1"><i data-lucide="package-check" class="h-3 w-3"></i> In Stock (&lt;1400)</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-2 mt-4">16 oz</h3>
+                    <div class="mb-4">
+                        <div class="text-3xl font-extrabold text-blue-600 mb-1">$0.49 - $0.89</div>
+                        <div class="text-xs text-slate-500">Volume Discounts Available</div>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-6">Our standard size. High inventory availability.</p>
+
+                    <!-- Volume Tiers Table -->
+                    <div class="mb-6 bg-slate-50 rounded-lg overflow-hidden border border-slate-200 text-sm">
+                        <table class="w-full">
+                            <thead class="bg-slate-100">
+                                <tr>
+                                    <th class="py-2 px-2 text-left text-slate-600 font-semibold">Quantity</th>
+                                    <th class="py-2 px-2 text-right text-slate-600 font-semibold">Price/Pack</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr class="hover:bg-blue-50/50"><td class="py-2 px-2 text-left text-slate-700">350 - 900</td><td class="py-2 px-2 text-right font-bold text-blue-700">$0.89</td></tr>
+                                <tr class="hover:bg-blue-50/50"><td class="py-2 px-2 text-left text-slate-700">901 - 1,800</td><td class="py-2 px-2 text-right font-bold text-blue-700">$0.79</td></tr>
+                                <tr class="hover:bg-blue-50/50"><td class="py-2 px-2 text-left text-slate-700">1,801 - 2,700</td><td class="py-2 px-2 text-right font-bold text-blue-700">$0.69</td></tr>
+                                <tr class="hover:bg-blue-50/50"><td class="py-2 px-2 text-left text-slate-700">2,701 - 7,200</td><td class="py-2 px-2 text-right font-bold text-blue-700">$0.59</td></tr>
+                                <tr class="hover:bg-blue-50/50"><td class="py-2 px-2 text-left text-slate-700">7,200+</td><td class="py-2 px-2 text-right font-bold text-blue-700">$0.49</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="border-t border-slate-100 pt-4 mb-6 space-y-2">
+                        <p class="text-sm font-semibold text-slate-600">Minimum Order: <br/>350 Packs</p>
+                    </div>
+                    <a href="#contact" class="block w-full py-3 px-4 font-bold rounded-lg transition-colors bg-blue-600 hover:bg-blue-700 text-white shadow-md">Order Now</a>
+                </div>
+
+                <!-- 24 oz -->
+                <div class="bg-white text-slate-900 rounded-xl p-6 text-center transform transition-all duration-300 relative opacity-95">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm whitespace-nowrap bg-slate-200 text-slate-600">
+                        <span class="flex items-center gap-1"><i data-lucide="alert-circle" class="h-3 w-3"></i> Sourced to Order</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-2 mt-4">24 oz</h3>
+                    <div class="mb-4">
+                        <div class="text-3xl font-extrabold text-slate-900 mb-1">$1.49</div>
+                        <div class="text-xs text-slate-500">per pack (pre-frozen)</div>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-6">Extended duration cooling.</p>
+                    <div class="border-t border-slate-100 pt-4 mb-6 space-y-2">
+                        <p class="text-sm font-semibold text-slate-600">Minimum Order: <br/>150 Packs</p>
+                    </div>
+                    <a href="#contact" class="block w-full py-3 px-4 font-bold rounded-lg transition-colors bg-slate-100 hover:bg-slate-200 text-slate-800">Request Quote</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rate Sheet Section -->
+    <section id="rates" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Storage Rate Sheet</h2>
+                    <p class="text-slate-600 max-w-xl">
+                        Transparent, volume-based pricing. The more you store, the more you save per pallet. 
+                        Rates effective as of <script>document.write(new Date().getFullYear())</script>.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="#contact" class="text-blue-600 font-semibold hover:underline flex items-center gap-1">Download PDF Rate Sheet <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+                </div>
+            </div>
+
+            <!-- Rate Cards -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Silver -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-6 border-b border-slate-100 bg-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900">Silver</h3>
+                        <p class="text-slate-600 font-medium">1-9 Pallets</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-extrabold text-slate-900">$55.00</span>
+                            <span class="text-slate-500 ml-2">/ pallet / mo</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Handling In/Out: <strong class="text-slate-900">$25.00</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Commitment: <strong class="text-slate-900">1 Month</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Standard Reporting</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block w-full text-center bg-slate-900 text-white font-semibold py-3 rounded-lg hover:bg-slate-800 transition-colors">Request Space</a>
+                    </div>
+                </div>
+
+                <!-- Gold -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-6 border-b border-slate-100 bg-yellow-100">
+                        <h3 class="text-xl font-bold text-slate-900">Gold</h3>
+                        <p class="text-slate-600 font-medium">10-49 Pallets</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-extrabold text-slate-900">$50.00</span>
+                            <span class="text-slate-500 ml-2">/ pallet / mo</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Handling In/Out: <strong class="text-slate-900">$20.00</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Commitment: <strong class="text-slate-900">1 Month</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Standard Reporting</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block w-full text-center bg-slate-900 text-white font-semibold py-3 rounded-lg hover:bg-slate-800 transition-colors">Request Space</a>
+                    </div>
+                </div>
+
+                <!-- Platinum -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-6 border-b border-slate-100 bg-blue-100">
+                        <h3 class="text-xl font-bold text-slate-900">Platinum</h3>
+                        <p class="text-slate-600 font-medium">50+ Pallets</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-extrabold text-slate-900">$45.00</span>
+                            <span class="text-slate-500 ml-2">/ pallet / mo</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Handling In/Out: <strong class="text-slate-900">$15.00</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Commitment: <strong class="text-slate-900">3 Months</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-3 flex-shrink-0"></i>
+                                <span class="text-slate-600">Standard Reporting</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block w-full text-center bg-slate-900 text-white font-semibold py-3 rounded-lg hover:bg-slate-800 transition-colors">Request Space</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Bar Chart Replacement -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 mb-16">
+                <h3 class="text-lg font-semibold text-slate-900 mb-6">Volume Savings Visualization</h3>
+                
+                <div class="flex items-end space-x-8 h-64 border-b border-slate-200 pb-2 px-4">
+                    <!-- Silver Bar -->
+                    <div class="flex flex-col items-center flex-1 h-full justify-end group">
+                        <div class="text-xs font-bold text-slate-500 mb-2 opacity-0 group-hover:opacity-100 transition-opacity">$55.00</div>
+                        <div class="w-full max-w-[80px] bg-slate-400 rounded-t-lg transition-all hover:bg-slate-500" style="height: 100%;"></div>
+                        <div class="text-xs font-medium text-slate-600 mt-2 text-center">Silver<br><span class="text-[10px] text-slate-400">1-9 Plt</span></div>
+                    </div>
+                     <!-- Gold Bar -->
+                     <div class="flex flex-col items-center flex-1 h-full justify-end group">
+                        <div class="text-xs font-bold text-slate-500 mb-2 opacity-0 group-hover:opacity-100 transition-opacity">$50.00</div>
+                        <div class="w-full max-w-[80px] bg-slate-400 rounded-t-lg transition-all hover:bg-slate-500" style="height: 90%;"></div>
+                        <div class="text-xs font-medium text-slate-600 mt-2 text-center">Gold<br><span class="text-[10px] text-slate-400">10-49 Plt</span></div>
+                    </div>
+                     <!-- Platinum Bar -->
+                     <div class="flex flex-col items-center flex-1 h-full justify-end group">
+                        <div class="text-xs font-bold text-slate-500 mb-2 opacity-0 group-hover:opacity-100 transition-opacity">$45.00</div>
+                        <div class="w-full max-w-[80px] bg-blue-600 rounded-t-lg transition-all hover:bg-blue-700" style="height: 81%;"></div>
+                        <div class="text-xs font-medium text-slate-600 mt-2 text-center">Platinum<br><span class="text-[10px] text-slate-400">50+ Plt</span></div>
+                    </div>
+                </div>
+                
+                <p class="text-center text-sm text-slate-500 mt-4">
+                    Platinum tier saves up to 18% annually compared to low volume rates.
+                </p>
+            </div>
+
+            <!-- Additional Services Table -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6">Value-Added Services</h3>
+                <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-lg">
+                    <table class="min-w-full divide-y divide-slate-300 bg-white">
+                        <thead class="bg-slate-50">
+                            <tr>
+                                <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-slate-900 sm:pl-6">Service</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">Unit</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">Rate</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900 hidden sm:table-cell">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 bg-white">
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">Cross-Docking</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">Per Pallet</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">$30.00</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500 hidden sm:table-cell">Immediate transfer</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">Case Picking</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">Per Case</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">$3.50</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500 hidden sm:table-cell">Complex items may vary</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">Inventory Count</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">Per Hour</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">$75.00</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500 hidden sm:table-cell">1 Hour Minimum</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">Labeling</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">Per Pallet</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500">$15.00</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-slate-500 hidden sm:table-cell">Customer supplies labels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract Info Section -->
+    <section class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Left Column: Intro -->
+                <div class="md:w-1/3">
+                    <div class="bg-blue-600 p-3 inline-block rounded-xl mb-6">
+                        <i data-lucide="shield-check" class="h-8 w-8 text-white"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Secure & Transparent Warehousing</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        We operate under a standard Warehouseman's Contract designed to protect both parties. Our terms are clear, fair, and industry-standard for cold storage facilities in California.
+                    </p>
+                    <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-sm flex items-start gap-4">
+                        <i data-lucide="file-text" class="h-6 w-6 text-blue-600 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Standard Agreement</h4>
+                            <p class="text-sm text-slate-500 mt-1">Full legal text provided upon account setup.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Key Terms Grid -->
+                <div class="md:w-2/3">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-300 transition-colors">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Limitation of Liability</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Liability is limited to the lowest of: cost of goods, $0.50/lb, or max $500/pallet.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-300 transition-colors">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Force Majeure</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Protection against events beyond control including power outages and mechanical failure.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-300 transition-colors">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Indemnification</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Customer defends warehouse against third-party claims arising from their goods.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-300 transition-colors">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Lien Rights</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Right to hold/sell goods for unpaid storage or handling charges.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-300 transition-colors">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Product Warranty</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">Customer warrants goods are safe, legal, and properly packaged for cold storage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Get a Quote</h2>
+                    <p class="text-lg text-slate-600 mb-10">
+                        Ready to streamline your cold chain? We service LA, San Diego, Ventura, and the Inland Empire. Fill out the form or give us a call.
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100 text-blue-600">
+                                    <i data-lucide="phone" class="h-6 w-6"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-slate-900">Phone</h3>
+                                <p class="mt-1 text-slate-600">(951) 555-0123</p>
+                                <p class="text-sm text-slate-500">Mon-Fri 8am-5pm PST</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100 text-blue-600">
+                                    <i data-lucide="mail" class="h-6 w-6"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-slate-900">Email</h3>
+                                <p class="mt-1 text-slate-600">sales@trinitycoldchain.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100 text-blue-600">
+                                    <i data-lucide="map-pin" class="h-6 w-6"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4 w-full">
+                                <h3 class="text-lg font-medium text-slate-900">Warehouse Location</h3>
+                                <p class="mt-1 text-slate-600">
+                                    1701 N. Delilah St<br />
+                                    Corona, CA 92879
+                                </p>
+                                <div class="mt-4 h-56 w-full bg-slate-200 rounded-lg overflow-hidden relative shadow-md border border-slate-200">
+                                    <iframe 
+                                      width="100%" 
+                                      height="100%" 
+                                      id="gmap_canvas" 
+                                      src="https://maps.google.com/maps?q=1701+N.+Delilah+St,+Corona,+CA+92879&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                      frameBorder="0" 
+                                      scrolling="no" 
+                                      title="Trinity Cold Chain Location"
+                                      class="w-full h-full"
+                                    ></iframe>
+                                    <a 
+                                      href="https://www.google.com/maps/search/?api=1&query=1701+N.+Delilah+St,+Corona,+CA+92879" 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      class="absolute bottom-2 right-2 bg-white/90 hover:bg-white px-3 py-1.5 rounded text-xs font-semibold text-blue-600 shadow-sm flex items-center gap-1.5 transition-colors border border-slate-200"
+                                    >
+                                      <i data-lucide="map-pin" class="h-3 w-3"></i> Open in Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! This is a demo form. In production, this would email your sales team.');" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
+                                <input type="text" id="name" required class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border" />
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-700">Phone</label>
+                                <input type="tel" id="phone" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700">Email Address</label>
+                            <input type="email" id="email" required class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border" />
+                        </div>
+
+                        <div>
+                            <label for="interest" class="block text-sm font-medium text-slate-700">I'm interested in</label>
+                            <select id="interest" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border bg-white">
+                                <option value="storage">Cold Storage (Racks)</option>
+                                <option value="gelpacks">Gel Packs</option>
+                                <option value="distribution">Distribution/Cross-docking</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700">Message / Details</label>
+                            <textarea id="message" rows="4" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border" placeholder="Tell us about your volume (pallets per month), product type, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                            Request Quote
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4 mb-4 md:mb-0">
+                <!-- Footer Logo -->
+                <svg class="h-10 w-10 opacity-80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 10L90 85H10L50 10Z" class="fill-slate-800" stroke="#475569" stroke-width="2" />
+                    <path d="M50 40L70 75H30L50 40Z" class="fill-cyan-500" />
+                </svg>
+                <div>
+                    <span class="text-white font-bold text-lg tracking-wide block">TRINITY COLD CHAIN</span>
+                    <p class="text-sm mt-1 text-slate-500">1701 N. Delilah St • Corona, CA 92879</p>
+                </div>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Trinity Cold Chain.</p>
+                <p class="text-slate-600 mt-1">All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-menu-open');
+        const iconClose = document.getElementById('icon-menu-close');
+        const links = document.querySelectorAll('.mobile-link');
+
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                const isHidden = menu.classList.contains('hidden');
+                if (isHidden) {
+                    menu.classList.remove('hidden');
+                    iconOpen.classList.add('hidden');
+                    iconClose.classList.remove('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                    iconOpen.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                }
+            });
+
+            // Close menu when clicking a link
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    iconOpen.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
