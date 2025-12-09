@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trinity Cold Chain | Supplies, Storage & Distribution</title>
     <meta name="description" content="Professional cold storage, supplies, cross-docking, and pre-frozen gel pack distribution in Corona, CA. Serving Los Angeles, San Diego, Ventura, and Inland Empire.">
-    <meta name="referrer" content="origin">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,6 +27,20 @@
         }
         .text-shadow {
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        /* Loading spinner */
+        .spinner {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top: 3px solid #fff;
+            width: 20px;
+            height: 20px;
+            -webkit-animation: spin 1s linear infinite; /* Safari */
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -626,18 +639,13 @@
 
                 <!-- Form -->
                 <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm">
-                    <form action="https://formsubmit.co/80a768c4d399ca9cc320fbb9a8add689" method="POST" class="space-y-6">
-                        <!-- Redirect to thanks page after submission -->
-                        <input type="hidden" name="_next" value="/thanks.html">
+                    <!-- ID added for JS targeting. Action removed to prevent default submission. -->
+                    <form id="contact-form" class="space-y-6">
                         
-                        <!-- Configure Subject and Template -->
+                        <!-- Configuration hidden fields -->
                         <input type="hidden" name="_subject" value="New Quote Request - Trinity Cold Chain">
                         <input type="hidden" name="_template" value="table">
-                        
-                        <!-- Disable Captcha (Optional, if you trust your spam filter) -->
                         <input type="hidden" name="_captcha" value="false">
-
-                        <!-- Honeypot for spam (hidden field, do not remove) -->
                         <input type="text" name="_honey" style="display:none">
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -671,7 +679,7 @@
                             <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border" placeholder="Tell us about your volume (pallets per month), product type, etc."></textarea>
                         </div>
 
-                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                        <button type="submit" id="submit-btn" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
                             Request Quote
                         </button>
                     </form>
@@ -733,6 +741,50 @@
                     menu.classList.add('hidden');
                     iconOpen.classList.remove('hidden');
                     iconClose.classList.add('hidden');
+                });
+            });
+        }
+
+        // Form Submission Logic (AJAX)
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Change button state
+                const originalText = submitBtn.innerText;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<div class="spinner inline-block mr-2"></div> Sending...';
+
+                // Collect Data
+                const formData = new FormData(form);
+
+                // Use the FormSubmit AJAX endpoint
+                fetch("https://formsubmit.co/ajax/80a768c4d399ca9cc320fbb9a8add689", {
+                    method: "POST",
+                    headers: { 
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Success: Redirect manually
+                        window.location.href = "thanks.html";
+                    } else {
+                        // Error
+                        alert("Oops! There was a problem submitting your form. Please try again or call us directly.");
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = originalText;
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    alert("Oops! There was a problem submitting your form. Please try again or call us directly.");
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = originalText;
                 });
             });
         }
