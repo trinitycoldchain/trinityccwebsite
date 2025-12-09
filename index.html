@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trinity Cold Chain | Supplies, Storage & Distribution</title>
     <meta name="description" content="Professional cold storage, supplies, cross-docking, and pre-frozen gel pack distribution in Corona, CA. Serving Los Angeles, San Diego, Ventura, and Inland Empire.">
+    <meta name="referrer" content="origin">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -628,8 +629,17 @@
                     <form action="https://formsubmit.co/80a768c4d399ca9cc320fbb9a8add689" method="POST" class="space-y-6">
                         <!-- Redirect to thanks page after submission -->
                         <input type="hidden" name="_next" value="/thanks.html">
+                        
+                        <!-- Configure Subject and Template -->
                         <input type="hidden" name="_subject" value="New Quote Request - Trinity Cold Chain">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <!-- Disable Captcha (Optional, if you trust your spam filter) -->
                         <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Honeypot for spam (hidden field, do not remove) -->
+                        <input type="text" name="_honey" style="display:none">
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
