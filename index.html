@@ -28,15 +28,16 @@
         .text-shadow {
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-        /* Loading spinner */
+        /* Loading spinner for button */
         .spinner {
-            border: 3px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 50%;
-            border-top: 3px solid #fff;
-            width: 20px;
-            height: 20px;
-            -webkit-animation: spin 1s linear infinite; /* Safari */
+            border-top: 2px solid #fff;
+            width: 16px;
+            height: 16px;
             animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 8px;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -98,57 +99,57 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="relative pt-24 pb-8 overflow-hidden">
+    <div class="relative pt-24 pb-6 overflow-hidden min-h-[400px] flex items-center">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
             <img src="https://picsum.photos/id/401/1920/1080" alt="Cold Storage Warehouse" class="w-full h-full object-cover filter grayscale contrast-125 brightness-50" />
             <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-blue-900/75 mix-blend-multiply"></div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="max-w-4xl">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50/20 border border-blue-400/30 text-blue-100 text-sm font-medium mb-3 backdrop-blur-sm">
-                    <i data-lucide="thermometer" class="h-4 w-4"></i>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50/20 border border-blue-400/30 text-blue-100 text-xs font-medium mb-3 backdrop-blur-sm">
+                    <i data-lucide="thermometer" class="h-3 w-3"></i>
                     <span>Now Accepting New Clients in Corona, CA</span>
                 </div>
                 
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-2 leading-tight">
                     Trinity Cold Chain <br class="hidden md:block"/>
-                    <span class="text-blue-400 whitespace-nowrap text-lg md:text-xl lg:text-2xl">Supplies, Storage & Distribution</span>
+                    <span class="text-blue-400 whitespace-nowrap text-lg md:text-xl lg:text-xl font-bold tracking-wide">Supplies, Storage & Distribution</span>
                 </h1>
                 
-                <p class="text-base lg:text-lg text-slate-300 mb-5 max-w-2xl leading-relaxed">
+                <p class="text-sm md:text-base text-slate-300 mb-5 max-w-2xl leading-relaxed">
                     Premier refrigerated and freezer cold storage, cross docking and <strong>wholesale pre-frozen gel packs</strong>. 
                     We offer 400+ rack spaces and service LA, San Diego, Ventura county, and the Inland Empire with our own middle mile and last mile delivery fleet.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#rates" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-bold rounded-lg text-blue-900 bg-white hover:bg-blue-50 transition-all shadow-lg">
+                    <a href="#rates" class="inline-flex justify-center items-center px-6 py-2.5 border border-transparent text-sm font-bold rounded-lg text-blue-900 bg-white hover:bg-blue-50 transition-all shadow-lg">
                         View Rates
                     </a>
-                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 border border-white/20 text-base font-bold rounded-lg text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all">
-                        Contact Us <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-2.5 border border-white/20 text-sm font-bold rounded-lg text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all">
+                        Contact Us <i data-lucide="chevron-right" class="ml-2 h-4 w-4"></i>
                     </a>
                 </div>
             </div>
 
             <!-- Stats strip -->
-            <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-6">
+            <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-white/10 pt-4">
                 <div>
-                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">300+ Racks</div>
-                    <div class="text-xs text-blue-200">Frozen Capacity</div>
+                    <div class="text-lg lg:text-xl font-bold text-white mb-0.5">300+ Racks</div>
+                    <div class="text-[10px] text-blue-200 uppercase tracking-wider">Frozen Capacity</div>
                 </div>
                 <div>
-                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">100+ Racks</div>
-                    <div class="text-xs text-blue-200">Refrigerated</div>
+                    <div class="text-lg lg:text-xl font-bold text-white mb-0.5">100+ Racks</div>
+                    <div class="text-[10px] text-blue-200 uppercase tracking-wider">Refrigerated</div>
                 </div>
                 <div>
-                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">In Stock</div>
-                    <div class="text-xs text-blue-200">Gel Packs</div>
+                    <div class="text-lg lg:text-xl font-bold text-white mb-0.5">In Stock</div>
+                    <div class="text-[10px] text-blue-200 uppercase tracking-wider">Gel Packs</div>
                 </div>
                 <div>
-                    <div class="text-xl lg:text-2xl font-bold text-white mb-1">SoCal Wide</div>
-                    <div class="text-xs text-blue-200">Service Area</div>
+                    <div class="text-lg lg:text-xl font-bold text-white mb-0.5">SoCal Wide</div>
+                    <div class="text-[10px] text-blue-200 uppercase tracking-wider">Service Area</div>
                 </div>
             </div>
         </div>
@@ -171,7 +172,7 @@
                         <i data-lucide="warehouse" class="h-8 w-8 text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-slate-900">3PL Cold Storage</h3>
-                    <p class="mb-6 leading-relaxed text-slate-600">
+                    <p class="leading-relaxed text-slate-600">
                         300+ freezer racks, 100+ refrigerated racks, and 2-high floor stacking. Flexible rentals for short or long-term needs.
                     </p>
                 </div>
@@ -182,7 +183,7 @@
                         <i data-lucide="snowflake" class="h-8 w-8 text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-white">Ice Gel Packs</h3>
-                    <p class="mb-6 leading-relaxed text-blue-100">
+                    <p class="leading-relaxed text-blue-100">
                         We stock wholesale pre-frozen 16oz gel packs and offer 8oz/24oz sizes to order.
                     </p>
                 </div>
@@ -193,7 +194,7 @@
                         <i data-lucide="truck" class="h-8 w-8 text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-slate-900">Distribution</h3>
-                    <p class="mb-6 leading-relaxed text-slate-600">
+                    <p class="leading-relaxed text-slate-600">
                         Middle mile and last mile fleet servicing LA, San Diego, Ventura, & Inland Empire (up to Palm Springs & Big Bear).
                     </p>
                 </div>
@@ -204,7 +205,7 @@
                         <i data-lucide="box" class="h-8 w-8 text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-slate-900">Cross-Docking</h3>
-                    <p class="mb-6 leading-relaxed text-slate-600">
+                    <p class="leading-relaxed text-slate-600">
                         Efficient in/out handling at our 3 loading dock bays. Case picking, labeling, and inventory counts available.
                     </p>
                 </div>
@@ -441,28 +442,28 @@
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 mb-16">
                 <h3 class="text-lg font-semibold text-slate-900 mb-6">Volume Savings Visualization</h3>
                 
-                <div class="flex items-end space-x-8 h-64 border-b border-slate-200 pb-2 px-4">
+                <div class="flex items-end space-x-8 h-48 border-b border-slate-200 pb-2 px-4">
                     <!-- Silver Bar -->
                     <div class="flex flex-col items-center flex-1 h-full justify-end group">
                         <div class="text-xs font-bold text-slate-500 mb-2 opacity-0 group-hover:opacity-100 transition-opacity">$55.00</div>
                         <div class="w-full max-w-[80px] bg-slate-400 rounded-t-lg transition-all hover:bg-slate-500" style="height: 100%;"></div>
-                        <div class="text-xs font-medium text-slate-600 mt-2 text-center">Silver<br><span class="text-[10px] text-slate-400">1-9 Plt</span></div>
+                        <div class="text-[10px] font-bold text-slate-600 mt-2 text-center uppercase tracking-tighter">Silver<br><span class="text-[9px] text-slate-400 font-normal">1-9 Plt</span></div>
                     </div>
                      <!-- Gold Bar -->
                      <div class="flex flex-col items-center flex-1 h-full justify-end group">
                         <div class="text-xs font-bold text-slate-500 mb-2 opacity-0 group-hover:opacity-100 transition-opacity">$50.00</div>
                         <div class="w-full max-w-[80px] bg-slate-400 rounded-t-lg transition-all hover:bg-slate-500" style="height: 90%;"></div>
-                        <div class="text-xs font-medium text-slate-600 mt-2 text-center">Gold<br><span class="text-[10px] text-slate-400">10-49 Plt</span></div>
+                        <div class="text-[10px] font-bold text-slate-600 mt-2 text-center uppercase tracking-tighter">Gold<br><span class="text-[9px] text-slate-400 font-normal">10-49 Plt</span></div>
                     </div>
                      <!-- Platinum Bar -->
                      <div class="flex flex-col items-center flex-1 h-full justify-end group">
                         <div class="text-xs font-bold text-slate-500 mb-2 opacity-0 group-hover:opacity-100 transition-opacity">$45.00</div>
                         <div class="w-full max-w-[80px] bg-blue-600 rounded-t-lg transition-all hover:bg-blue-700" style="height: 81%;"></div>
-                        <div class="text-xs font-medium text-slate-600 mt-2 text-center">Platinum<br><span class="text-[10px] text-slate-400">50+ Plt</span></div>
+                        <div class="text-[10px] font-bold text-slate-600 mt-2 text-center uppercase tracking-tighter">Platinum<br><span class="text-[9px] text-slate-400 font-normal">50+ Plt</span></div>
                     </div>
                 </div>
                 
-                <p class="text-center text-sm text-slate-500 mt-4">
+                <p class="text-center text-xs text-slate-500 mt-4">
                     Platinum tier saves up to 18% annually compared to low volume rates.
                 </p>
             </div>
@@ -639,15 +640,8 @@
 
                 <!-- Form -->
                 <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm">
-                    <!-- ID added for JS targeting. Action removed to prevent default submission. -->
+                    <!-- Removed action/method to handle via JavaScript exclusively -->
                     <form id="contact-form" class="space-y-6">
-                        
-                        <!-- Configuration hidden fields -->
-                        <input type="hidden" name="_subject" value="New Quote Request - Trinity Cold Chain">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_honey" style="display:none">
-
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
@@ -680,7 +674,7 @@
                         </div>
 
                         <button type="submit" id="submit-btn" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
-                            Request Quote
+                            <span id="btn-text">Request Quote</span>
                         </button>
                     </form>
                 </div>
@@ -745,46 +739,57 @@
             });
         }
 
-        // Form Submission Logic (AJAX)
-        const form = document.getElementById('contact-form');
+        // --- NEW ROBUST AJAX SUBMISSION ---
+        const contactForm = document.getElementById('contact-form');
         const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
 
-        if (form) {
-            form.addEventListener('submit', function(e) {
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                
-                // Change button state
-                const originalText = submitBtn.innerText;
+
+                // 1. Show loading state
                 submitBtn.disabled = true;
-                submitBtn.innerHTML = '<div class="spinner inline-block mr-2"></div> Sending...';
+                btnText.innerHTML = '<span class="spinner"></span> Sending...';
 
-                // Collect Data
-                const formData = new FormData(form);
+                // 2. Prepare data as a JSON object
+                const formData = new FormData(contactForm);
+                const data = {
+                    name: formData.get('name'),
+                    phone: formData.get('phone'),
+                    email: formData.get('email'),
+                    interest: formData.get('interest'),
+                    message: formData.get('message'),
+                    _subject: "New Quote Request - Trinity Cold Chain",
+                    _captcha: "false",
+                    _template: "table"
+                };
 
-                // Use the FormSubmit AJAX endpoint
+                // 3. Send to FormSubmit AJAX endpoint
+                // Replace the ID below with your actual ID if it changes
                 fetch("https://formsubmit.co/ajax/80a768c4d399ca9cc320fbb9a8add689", {
                     method: "POST",
                     headers: { 
-                        'Accept': 'application/json'
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
                     },
-                    body: formData
+                    body: JSON.stringify(data)
                 })
                 .then(response => {
                     if (response.ok) {
-                        // Success: Redirect manually
+                        // 4. Redirect to your thanks page
                         window.location.href = "thanks.html";
                     } else {
-                        // Error
-                        alert("Oops! There was a problem submitting your form. Please try again or call us directly.");
-                        submitBtn.disabled = false;
-                        submitBtn.innerText = originalText;
+                        throw new Error("Form submission failed");
                     }
                 })
                 .catch(error => {
                     console.error("Error:", error);
-                    alert("Oops! There was a problem submitting your form. Please try again or call us directly.");
+                    alert("There was an error sending your message. Please try again or call us directly.");
+                    
+                    // Reset button state
                     submitBtn.disabled = false;
-                    submitBtn.innerText = originalText;
+                    btnText.innerText = 'Request Quote';
                 });
             });
         }
